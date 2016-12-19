@@ -4,12 +4,14 @@
     <title>Guessing Game</title>
 
     <!-- Bootstrap and CSS here-->
-
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
+      rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="style.css" >
+
   </head>
   <body>
 
-      <div id='app'>
+      <div id='app' class='center container'>
 
         <div id='headers'>
             <!-- Title and subtitles! -->
@@ -18,11 +20,13 @@
         </div>
 
         <div id='main'>
-          <div id='input-parent'>
+          <div id='parent-input'>
             <!-- Player's guess input, and submit button -->
-            <label for="your-guess"> Enter Number </label>
-            <input type="text" id="your-guess" autofocus placeholder="0" maxlength=3>
-            <input type ="submit" value="your guess">
+
+          <input type="text" id="your-guess"  autofocus placeholder="0" maxlength=3 align='left' >
+
+
+          <button id='submit' class='btn btn-success'> Your Guess </button>
 
 
           </div>
@@ -30,16 +34,16 @@
           <div id='guesses'>
 
             <!-- unordered list of guesses -->
-            <ul>
-              <li> 200</li>
-              <li> 240 </li>
+            <ul id='guess-list'>
+              <li class='guess'> 200</li>
+              <li class='guess'> 240 </li>
             </ul>
           </div>
 
-          <div id="menu-btns">
+          <div id="menu-btns" >
               <!-- reset and hint buttons -->
-              <button>Reset</button>
-              <button>Hint</button>
+              <button id='reset'class='btn btn-warning' >Reset</button>
+              <button id ='hint'class='btn btn-info'>Hint</button>
           </div>
         </div>
       </div>
@@ -47,17 +51,17 @@
 
 
     <div id='footer'>
-        <div>
-          <div class=''>
-            <img src='fa-logo@2x.png'></img>
+        <div class='row'>
+          <div class='col-sm-4'>
+            <img class="footer-logo" class='img-responsive'src='fa-logo@2x.png'></img>
           </div>
 
-          <div class=''>
-            <h4>Project by Konstantinos Pouliasis</h4>
+          <div  class='col-sm-4'>
+            <h4> Project by Konstantinos Pouliasis</h4>
           </div>
 
-          <div class=''>
-            <img src='grace_hopper_academy.png'></img>
+          <div  class = 'col-sm-4'>
+            <img class="footer-logo" class='img-responsive' src='grace_hopper_academy.png'></img>
           </div>
 
 

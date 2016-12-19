@@ -7,8 +7,6 @@
       padding: 0;
   }
   img {
-      display: inline;
-      width: 200px;
       height: 100px;
   }
   #footer {
@@ -18,3 +16,21 @@
       position: fixed;
       bottom: 0;
   }
+
+
+#parent-input{
+  width: 500px;
+  margin:auto;
+}
+#player-input {
+    margin-top:20px;}
+#guesses{
+  margin-top:50px;
+}
+
+#your-guess{
+  margin-top:20px;
+}
+.footer-logo{
+  height:100px;
+}
